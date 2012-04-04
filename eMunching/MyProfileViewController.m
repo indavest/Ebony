@@ -97,8 +97,8 @@
     [self getSaltByUserId];//Call to get Salt 
     
     //Set colors from templates
-    [self.view setBackgroundColor:BACKGROUNDCOLOR];
-    [m_scrollView setBackgroundColor:BACKGROUNDCOLOR]; 
+    [self.view setBackgroundColor :[UIColor colorWithPatternImage:[UIImage imageNamed:@"app_background.png"]]];
+    [m_scrollView setBackgroundColor:[UIColor clearColor]]; 
     [self.navigationController.navigationBar setTintColor:TINTCOLOR];   
     
     [m_emailIdHeader         setTextColor:TEXTCOLOR2];

@@ -23,6 +23,7 @@
 #define BUTTON_CHEFSPECIAL  0
 #define BUTTON_FEATUREDDEAL 1
 #define BUTTON_HOTDEALS     2
+#define BUTTON_EVENTS       3
 
 #define BUTTON_CONTACTUS    0
 #define BUTTON_MAILUS       1
@@ -39,7 +40,7 @@
 // Currency
 //_____________________________________________________________________________________________________
 
-#define CURRENCY @"$"
+#define CURRENCY @"R"
 
 
 // Steps to create new versions of the app
@@ -129,7 +130,7 @@
 // Restaurant ID and synch interval
 //_____________________________________________________________________________________________________
 
-#define RESTAURANT_ID  5
+#define RESTAURANT_ID  36
 #define SYNCH_INTERVAL 10
 
 
@@ -164,7 +165,7 @@
 // account, mention the same ID in all versions of the app. To maintain separate analytics for each app
 // create a separate profiles and change this ID accordingly
 
-#define GOOGLEACCOUNTID @"UA-26249029-1"
+#define GOOGLEACCOUNTID @"UA-30553983-1"
 
 
 
@@ -176,28 +177,32 @@
 //    format: fb[facebookAppId]
 // 2. Update the app bundle ID (com.indavest.[application name]) in the app settings on facebook
 
-#define FACEBOOKAPID @"240127832701061"
+#define FACEBOOKAPID @"125422720921769"
 
-#define FACEBOOKSHARELINK @"http://www.emunching.com/"
+#define FACEBOOKSHARELINK @"http://www.ebonywithaview.com/"
 
-#define FACEBOOKSHARENAME @"I just tried this dish at Besito and it is delicious!"
+#define FACEBOOKSHARENAME @"I just tried this dish at Ebony and it is delicious!"
 
 // While we set @message, Facebook's revised policy does not allow setting this and hence the
 // "Say something about this... " textbox will remain empty
 #define FACEBOOKSHAREMESSAGE @"This is absolutely fabulous!"
 
 
+// Contact us constants
+//_____________________________________________________________________________________________________
+
+#define CALLTEXT @"Call Ebony?"
+
+
 
 // Branding and version strings
 //_____________________________________________________________________________________________________
 
-#define RESTAURANTBRANDING @"Besito"
+#define RESTAURANTBRANDING @"Ebony"
 
 #define EMUNCHINGBRANDING @"powered by eMunching"
 
 #define APPVERSION @"version 1.0"
-
-
 
 
 

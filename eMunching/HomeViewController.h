@@ -15,6 +15,7 @@
     UIImage  *m_logoImage;
     UIButton *m_specialsButton;
     UIButton *m_dealsButton;
+    UIButton *m_eventsButton;
     
     NSMutableArray          *m_parsedLocations;
     NSMutableData           *m_locationResults;
@@ -31,6 +32,8 @@
 @property (nonatomic,retain) IBOutlet UIImage       *logoImage;
 @property (nonatomic,retain) IBOutlet UIButton      *specialsButton;
 @property (nonatomic,retain) IBOutlet UIButton      *dealsButton;
+@property (nonatomic,retain) IBOutlet UIButton      *eventsButton;
+
 
 @property (nonatomic ,retain) NSMutableArray  *parsedLocations;
 @property (nonatomic, retain) NSMutableData   *locationResults;

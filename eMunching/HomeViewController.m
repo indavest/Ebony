@@ -13,6 +13,7 @@
 #import "SignInViewController.h"
 #import "MyProfileViewController.h"
 #import "HotDealsViewController.h"
+#import "EventViewController.h"
 
 @interface HomeViewController (PrivateMethods)
 
@@ -22,6 +23,7 @@
 - (void) displayChefSpecial;
 - (void) displayFeaturedDeals;
 - (void) displayHotDeals;
+- (void) displayEvents;
 
 @end
 
@@ -31,6 +33,7 @@
 @synthesize logoImage      = m_logoImage;
 @synthesize specialsButton = m_specialsButton;
 @synthesize dealsButton    = m_dealsButton;
+@synthesize eventsButton    = m_eventsButton;
 
 @synthesize locationResults         = m_locationResults;
 @synthesize parsedLocations         = m_parsedLocations;
@@ -143,6 +146,9 @@
         case BUTTON_HOTDEALS:
             [self displayHotDeals]; 
             break;
+        case BUTTON_EVENTS:
+            [self displayEvents];
+            break;
         default:
             break;
     }
@@ -191,6 +197,13 @@
         MyProfileViewController *MyProfileView =[[MyProfileViewController alloc]initWithNibName:@"MyProfileViewController" bundle:nil];
         [self.navigationController pushViewController:MyProfileView animated:YES]; 
     }
+}
+
+- (void) displayEvents
+{
+    EventViewController *events =[[EventViewController alloc]initWithNibName:@"EventViewController" bundle:nil];
+    [self.navigationController pushViewController:events animated:YES]; 
+
 }
 
 - (void)viewDidUnload
