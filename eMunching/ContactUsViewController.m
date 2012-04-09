@@ -127,16 +127,16 @@
     [self.navigationController.navigationBar setTintColor:TINTCOLOR]; 
     
     [m_website            setTextColor:TEXTCOLOR1];
-    [m_phoneNumberHeader  setTextColor:TEXTCOLOR5];
-    [m_phoneNumber        setTextColor:TEXTCOLOR5];
-    [m_emailAddressHeader setTextColor:TEXTCOLOR5];
-    [m_emailAddress       setTextColor:TEXTCOLOR5];
-    [m_locationNameHeader setTextColor:TEXTCOLOR5];
-    [m_locationName       setTextColor:TEXTCOLOR5];
-    [m_facebookUrlHeader  setTextColor:TEXTCOLOR5];
-    [m_facebookUrl        setTextColor:TEXTCOLOR5];
-    [m_twitterUrlHeader   setTextColor:TEXTCOLOR5];
-    [m_twitterUrl         setTextColor:TEXTCOLOR5];
+    [m_phoneNumberHeader  setTextColor:TEXTCOLOR3];
+    [m_phoneNumber        setTextColor:TEXTCOLOR1];
+    [m_emailAddressHeader setTextColor:TEXTCOLOR3];
+    [m_emailAddress       setTextColor:TEXTCOLOR1];
+    [m_locationNameHeader setTextColor:TEXTCOLOR3];
+    [m_locationName       setTextColor:TEXTCOLOR1];
+    [m_facebookUrlHeader  setTextColor:TEXTCOLOR3];
+    [m_facebookUrl        setTextColor:TEXTCOLOR1];
+    [m_twitterUrlHeader   setTextColor:TEXTCOLOR3];
+    [m_twitterUrl         setTextColor:TEXTCOLOR1];
     
     [m_website              setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:12.0f]];
     [m_phoneNumberHeader    setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:15.0f]];

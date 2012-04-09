@@ -98,7 +98,7 @@
     [m_emailHeader          setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:12.0f]];  
     [m_passwordHeader       setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:12.0f]]; 
     [m_forgotPasswordPrompt setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:12.0f]];
-    [m_registerUserPrompt   setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:12.0f]];
+    [m_registerUserPrompt   setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:14.0f]];
 }
 
 - (void) viewDidAppear:(BOOL)animated

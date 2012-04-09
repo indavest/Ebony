@@ -159,7 +159,7 @@
     if([[m_menuItem dishDiscountPrice] isEqualToString:@"0"])
     {
         [m_itemPrice setText:[NSString stringWithFormat:CURRENCY "%@",[m_menuItem dishPrice]]];
-        [m_itemPrice setFrame:CGRectMake(250.0, 20.0, 42.0, 21.0)];
+        [m_itemPrice setFrame:CGRectMake(245.0, 20.0, 52.0, 21.0)];
     }
     else
     {

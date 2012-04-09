@@ -110,6 +110,7 @@
 								<string key="NSFrame">{{0, 267}, {320, 80}}</string>
 								<reference key="NSSuperview" ref="435066832"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<int key="IBUITag">1</int>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -168,7 +169,7 @@
 								<string key="NSFrame">{{214, 10}, {87, 58}}</string>
 								<reference key="NSSuperview" ref="435066832"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="45582951"/>
+								<reference key="NSNextKeyView" ref="618441101"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<int key="IBUITag">3</int>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -198,9 +199,10 @@
 							<object class="IBUILabel" id="618441101">
 								<reference key="NSNextResponder" ref="435066832"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{10, 137}, {163, 21}}</string>
+								<string key="NSFrame">{{10, 129}, {172, 51}}</string>
 								<reference key="NSSuperview" ref="435066832"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="45582951"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
@@ -215,12 +217,14 @@
 								<int key="IBUIBaselineAdjustment">1</int>
 								<float key="IBUIMinimumFontSize">10</float>
 								<object class="IBUIFontDescription" key="IBUIFontDescription">
-									<int key="type">1</int>
-									<double key="pointSize">17</double>
+									<string key="name">TrebuchetMS-Bold</string>
+									<string key="family">Trebuchet MS</string>
+									<int key="traits">2</int>
+									<double key="pointSize">13</double>
 								</object>
 								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Helvetica</string>
-									<double key="NSSize">17</double>
+									<string key="NSName">TrebuchetMS-Bold</string>
+									<double key="NSSize">13</double>
 									<int key="NSfFlags">16</int>
 								</object>
 							</object>
@@ -486,6 +490,7 @@
 							<string>dealsButton</string>
 							<string>eventsButton</string>
 							<string>logoImage</string>
+							<string>restaurantDesc</string>
 							<string>scrollView</string>
 							<string>specialsButton</string>
 						</object>
@@ -494,6 +499,7 @@
 							<string>UIButton</string>
 							<string>UIButton</string>
 							<string>UIImage</string>
+							<string>FontLabel</string>
 							<string>UIScrollView</string>
 							<string>UIButton</string>
 						</object>
@@ -505,6 +511,7 @@
 							<string>dealsButton</string>
 							<string>eventsButton</string>
 							<string>logoImage</string>
+							<string>restaurantDesc</string>
 							<string>scrollView</string>
 							<string>specialsButton</string>
 						</object>
@@ -521,6 +528,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">logoImage</string>
 								<string key="candidateClassName">UIImage</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">restaurantDesc</string>
+								<string key="candidateClassName">FontLabel</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">scrollView</string>

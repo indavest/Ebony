@@ -34,6 +34,7 @@
 @synthesize specialsButton = m_specialsButton;
 @synthesize dealsButton    = m_dealsButton;
 @synthesize eventsButton    = m_eventsButton;
+@synthesize restaurantDesc = m_restaurantDesc;
 
 @synthesize locationResults         = m_locationResults;
 @synthesize parsedLocations         = m_parsedLocations;
@@ -86,7 +87,8 @@
     hiddenLabel.textAlignment = UITextAlignmentCenter;
     hiddenLabel.numberOfLines = 2;
     hiddenLabel.text   = @"Powered By eMunching";
-    [hiddenLabel setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:15.0f]];
+   // [m_restaurantDesc setZFont:[[ApplicationManager instance].fontManager zFontWithName:BOLDFONT pointSize:15.0f]]; 
+     [hiddenLabel setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:15.0f]];
     [self.scrollView addSubview:hiddenLabel];
     
     [[[self navigationItem] rightBarButtonItem] setTarget:self];
@@ -118,7 +120,7 @@
     
     [m_scrollView setBackgroundColor:[UIColor clearColor]]; 
     [self.view setBackgroundColor :[UIColor colorWithPatternImage:[UIImage imageNamed:@"app_background.png"]]];
-
+    
     [self.navigationController.navigationBar setTintColor:TINTCOLOR];   
 }
 

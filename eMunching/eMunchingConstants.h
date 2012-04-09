@@ -40,7 +40,7 @@
 // Currency
 //_____________________________________________________________________________________________________
 
-#define CURRENCY @"R"
+#define CURRENCY @"Rs"
 
 
 // Steps to create new versions of the app
