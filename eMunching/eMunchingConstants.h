@@ -202,7 +202,7 @@
 
 #define EMUNCHINGBRANDING @"powered by eMunching"
 
-#define APPVERSION @"version 1.0"
+#define APPVERSION @"version 1.1"
 
 
 

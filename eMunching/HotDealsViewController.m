@@ -215,11 +215,34 @@ didReceiveResponse:(NSURLResponse *) response {
             } 
             else if ([elementName isEqualToString:@"Starts"])
             {
-                self.hotDeal.dealStart = trimmedString;
+                NSRange range = [trimmedString rangeOfString:@" "] ;
+                NSString *substring = [[trimmedString substringToIndex:NSMaxRange(range)] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+                NSString *dateStr = substring;
+                NSDateFormatter *dtF = [[NSDateFormatter alloc] init];
+                [dtF setDateFormat:@"MM/dd/yyyy"];
+                NSDate *d = [dtF dateFromString:dateStr];
+                NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+                [dateFormat setDateFormat:@"dd-MM-yyyy"];
+                NSString *st = [dateFormat stringFromDate:d];   
+                [dtF release];
+                [dateFormat release];
+
+                self.hotDeal.dealStart = st;
             } 
             else if ([elementName isEqualToString:@"Expires"])
             {
-                self.hotDeal.dealStop = trimmedString;
+                NSRange range = [trimmedString rangeOfString:@" "] ;
+                NSString *substring = [[trimmedString substringToIndex:NSMaxRange(range)] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+                NSString *dateStr = substring;
+                NSDateFormatter *dtF = [[NSDateFormatter alloc] init];
+                [dtF setDateFormat:@"MM/dd/yyyy"];
+                NSDate *d = [dtF dateFromString:dateStr];
+                NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+                [dateFormat setDateFormat:@"dd-MM-yyyy"];
+                NSString *st = [dateFormat stringFromDate:d];   
+                [dtF release];
+                [dateFormat release];
+                self.hotDeal.dealStop = st;
             }  
         }
         

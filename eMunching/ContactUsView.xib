@@ -275,7 +275,7 @@
 							<object class="IBUIImageView" id="247606681">
 								<reference key="NSNextResponder" ref="521236112"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{100, 16}, {120, 60}}</string>
+								<string key="NSFrame">{{97, 0}, {120, 92}}</string>
 								<reference key="NSSuperview" ref="521236112"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="905166022"/>
@@ -537,7 +537,7 @@
 								<string key="NSFrame">{{35, 82}, {253, 35}}</string>
 								<reference key="NSSuperview" ref="521236112"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="933469816"/>
+								<reference key="NSNextKeyView" ref="217690034"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<int key="IBUITag">5</int>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -558,7 +558,7 @@
 							<object class="IBUILabel" id="933469816">
 								<reference key="NSNextResponder" ref="521236112"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{47, 89}, {227, 21}}</string>
+								<string key="NSFrame">{{35, 96}, {227, 21}}</string>
 								<reference key="NSSuperview" ref="521236112"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="648570956"/>
@@ -582,6 +582,38 @@
 								<object class="NSFont" key="IBUIFont">
 									<string key="NSName">Helvetica</string>
 									<double key="NSSize">14</double>
+									<int key="NSfFlags">16</int>
+								</object>
+							</object>
+							<object class="IBUILabel" id="217690034">
+								<reference key="NSNextResponder" ref="521236112"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{130, 88}, {63, 12}}</string>
+								<reference key="NSSuperview" ref="521236112"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="933469816"/>
+								<bool key="IBUIOpaque">NO</bool>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<int key="IBUIContentMode">7</int>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<string key="IBUIText">BANGALORE</string>
+								<object class="NSColor" key="IBUITextColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MCAwLjMyMTQyODU3MTQgMC4xNjUxMDI4MjQ3AA</bytes>
+								</object>
+								<nil key="IBUIHighlightedColor"/>
+								<int key="IBUIBaselineAdjustment">1</int>
+								<float key="IBUIMinimumFontSize">6</float>
+								<object class="IBUIFontDescription" key="IBUIFontDescription">
+									<string key="name">TrebuchetMS-Bold</string>
+									<string key="family">Trebuchet MS</string>
+									<int key="traits">2</int>
+									<double key="pointSize">9</double>
+								</object>
+								<object class="NSFont" key="IBUIFont">
+									<string key="NSName">TrebuchetMS-Bold</string>
+									<double key="NSSize">9</double>
 									<int key="NSfFlags">16</int>
 								</object>
 							</object>
@@ -878,6 +910,7 @@
 							<reference ref="319628601"/>
 							<reference ref="824497614"/>
 							<reference ref="247606681"/>
+							<reference ref="217690034"/>
 						</object>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -1013,6 +1046,11 @@
 						<reference key="object" ref="933469816"/>
 						<reference key="parent" ref="521236112"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">99</int>
+						<reference key="object" ref="217690034"/>
+						<reference key="parent" ref="521236112"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -1061,6 +1099,8 @@
 					<string>8.IBPluginDependency</string>
 					<string>80.CustomClassName</string>
 					<string>80.IBPluginDependency</string>
+					<string>99.CustomClassName</string>
+					<string>99.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1106,6 +1146,8 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>FontLabel</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>FontLabel</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -1120,7 +1162,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">98</int>
+			<int key="maxID">99</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

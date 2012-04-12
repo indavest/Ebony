@@ -32,7 +32,7 @@
 @synthesize scrollView     = m_scrollView;
 @synthesize logoImage      = m_logoImage;
 @synthesize specialsButton = m_specialsButton;
-@synthesize dealsButton    = m_dealsButton;
+//@synthesize dealsButton    = m_dealsButton;
 @synthesize eventsButton    = m_eventsButton;
 @synthesize restaurantDesc = m_restaurantDesc;
 
@@ -87,7 +87,7 @@
     hiddenLabel.textAlignment = UITextAlignmentCenter;
     hiddenLabel.numberOfLines = 2;
     hiddenLabel.text   = @"Powered By eMunching";
-   // [m_restaurantDesc setZFont:[[ApplicationManager instance].fontManager zFontWithName:BOLDFONT pointSize:15.0f]]; 
+    [m_restaurantDesc setZFont:[[ApplicationManager instance].fontManager zFontWithName:BOLDFONT pointSize:15.0f]]; 
      [hiddenLabel setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:15.0f]];
     [self.scrollView addSubview:hiddenLabel];
     
@@ -145,9 +145,9 @@
         case BUTTON_FEATUREDDEAL:
             [self displayFeaturedDeals];
             break;
-        case BUTTON_HOTDEALS:
-            [self displayHotDeals]; 
-            break;
+//        case BUTTON_HOTDEALS:
+//            [self displayHotDeals]; 
+//            break;
         case BUTTON_EVENTS:
             [self displayEvents];
             break;
@@ -168,18 +168,19 @@
 
 -(void) displayFeaturedDeals
 {
-    
-    DealsViewController *dealsView =[[DealsViewController alloc]initWithNibName:@"DealsView" bundle:nil];
-    [dealsView setSelectedDealType:1];
-    [self.navigationController pushViewController:dealsView animated:YES]; 
+    HotDealsViewController *hotDealsView =[[HotDealsViewController alloc]initWithNibName:@"HotDealsViewController" bundle:nil];
+    [self.navigationController pushViewController:hotDealsView animated:YES]; 
+//    DealsViewController *dealsView =[[DealsViewController alloc]initWithNibName:@"DealsView" bundle:nil];
+//    [dealsView setSelectedDealType:1];
+//    [self.navigationController pushViewController:dealsView animated:YES]; 
     
 }
 
--(void) displayHotDeals
-{
-    HotDealsViewController *hotDealsView =[[HotDealsViewController alloc]initWithNibName:@"HotDealsViewController" bundle:nil];
-    [self.navigationController pushViewController:hotDealsView animated:YES]; 
-}
+//-(void) displayHotDeals
+//{
+//    HotDealsViewController *hotDealsView =[[HotDealsViewController alloc]initWithNibName:@"HotDealsViewController" bundle:nil];
+//    [self.navigationController pushViewController:hotDealsView animated:YES]; 
+//}
 
 - (void) displayMyOrder
 {

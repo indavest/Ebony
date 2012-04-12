@@ -14,7 +14,7 @@
     UIScrollView *m_scrollView;
     UIImage  *m_logoImage;
     UIButton *m_specialsButton;
-    UIButton *m_dealsButton;
+   // UIButton *m_dealsButton;
     UIButton *m_eventsButton;
     FontLabel *m_restaurantDesc;
     
@@ -32,7 +32,7 @@
 @property (nonatomic,retain) IBOutlet UIScrollView  *scrollView;
 @property (nonatomic,retain) IBOutlet UIImage       *logoImage;
 @property (nonatomic,retain) IBOutlet UIButton      *specialsButton;
-@property (nonatomic,retain) IBOutlet UIButton      *dealsButton;
+//@property (nonatomic,retain) IBOutlet UIButton      *dealsButton;
 @property (nonatomic,retain) IBOutlet UIButton      *eventsButton;
 @property (nonatomic ,retain) IBOutlet FontLabel  *restaurantDesc;
 

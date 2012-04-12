@@ -119,7 +119,7 @@
     [m_grandTotal setZFont:[[ApplicationManager instance].fontManager zFontWithName:BOLDFONT pointSize:17.0f]];
     [m_headerSavings setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:14.0f]];
     [m_savings setZFont:[[ApplicationManager instance].fontManager zFontWithName:BOLDFONT pointSize:14.0f]];
-    [m_messageLabel setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:10.0f]];
+    [m_messageLabel setZFont:[[ApplicationManager instance].fontManager zFontWithName:BOLDFONT pointSize:14.0f]];
     
     //Set colors from templates  
     [self.view setBackgroundColor :[UIColor colorWithPatternImage:[UIImage imageNamed:@"app_background.png"]]];  //  [m_orderTable setBackgroundColor:BACKGROUNDCOLOR];
