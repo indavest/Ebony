@@ -27,6 +27,8 @@
 		3ED4EA98152C502100CB9E33 /* emunching_logo-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ED4EA94152C502100CB9E33 /* emunching_logo-1.png */; };
 		3ED4EA99152C502100CB9E33 /* emunching_logo@2x-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ED4EA95152C502100CB9E33 /* emunching_logo@2x-1.png */; };
 		3EE00826152CA692005853F1 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EE00825152CA692005853F1 /* iTunesArtwork.png */; };
+		3EF56AE41537092600307D8F /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF56AE21537092600307D8F /* bg.png */; };
+		3EF56AE51537092600307D8F /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF56AE31537092600307D8F /* bg@2x.png */; };
 		A8228E38142B3A4200DCEF15 /* DateSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8228E36142B3A4200DCEF15 /* DateSelectionViewController.m */; };
 		A8228E39142B3A4200DCEF15 /* DateSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8228E37142B3A4200DCEF15 /* DateSelectionViewController.xib */; };
 		A82B3296143D690C006DBB36 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82B3294143D690C006DBB36 /* EventViewController.m */; };
@@ -314,6 +316,8 @@
 		3ED4EA94152C502100CB9E33 /* emunching_logo-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emunching_logo-1.png"; path = "Images/emunching_logo-1.png"; sourceTree = "<group>"; };
 		3ED4EA95152C502100CB9E33 /* emunching_logo@2x-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emunching_logo@2x-1.png"; path = "Images/emunching_logo@2x-1.png"; sourceTree = "<group>"; };
 		3EE00825152CA692005853F1 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		3EF56AE21537092600307D8F /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		3EF56AE31537092600307D8F /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
 		A8228E35142B3A4200DCEF15 /* DateSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateSelectionViewController.h; sourceTree = "<group>"; };
 		A8228E36142B3A4200DCEF15 /* DateSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateSelectionViewController.m; sourceTree = "<group>"; };
 		A8228E37142B3A4200DCEF15 /* DateSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateSelectionViewController.xib; sourceTree = "<group>"; };
@@ -1062,6 +1066,8 @@
 		AF67525D13C8A6680008FE93 /* Home Images */ = {
 			isa = PBXGroup;
 			children = (
+				3EF56AE21537092600307D8F /* bg.png */,
+				3EF56AE31537092600307D8F /* bg@2x.png */,
 				3E561545152C2C7F0014819F /* app_background.png */,
 				3E561546152C2C7F0014819F /* app_background@2x.png */,
 				FFCFDB1E146006270054A5A9 /* besito_logo.png */,
@@ -1627,6 +1633,8 @@
 				3EA60A69152C79D70018DA58 /* events_button.png in Resources */,
 				3EA60A6A152C79D70018DA58 /* events_button@2x.png in Resources */,
 				3EE00826152CA692005853F1 /* iTunesArtwork.png in Resources */,
+				3EF56AE41537092600307D8F /* bg.png in Resources */,
+				3EF56AE51537092600307D8F /* bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1781,6 +1789,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3EA4F603153866D7002643FE /* Release copy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = "Release copy";
+		};
+		3EA4F604153866D7002643FE /* Release copy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"'armv6'",
+					"'armv7'",
+				);
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Indavest Ventures, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Indavest Ventures, LLC";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eMunching/eMunching-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "eMunching/eMunching-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/eMunching\"",
+				);
+				PRODUCT_NAME = Ebony;
+				PROVISIONING_PROFILE = "D5C45C2E-906C-4CA0-B3E4-AA8547632030";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D5C45C2E-906C-4CA0-B3E4-AA8547632030";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Release copy";
+		};
+		3EA4F605153866D7002643FE /* Release copy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/eMunching.app/eMunching";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eMunchingTests/eMunchingTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "eMunchingTests/eMunchingTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Release copy";
+		};
 		AF24A84713B5B5B700B1C046 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1819,8 +1895,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Indavest Ventures, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Indavest Ventures, LLC";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1833,6 +1909,8 @@
 					"\"$(SRCROOT)/eMunching\"",
 				);
 				PRODUCT_NAME = Ebony;
+				PROVISIONING_PROFILE = "D5C45C2E-906C-4CA0-B3E4-AA8547632030";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D5C45C2E-906C-4CA0-B3E4-AA8547632030";
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1846,8 +1924,8 @@
 					"'armv6'",
 					"'armv7'",
 				);
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Indavest Ventures, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Indavest Ventures, LLC";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eMunching/eMunching-Prefix.pch";
@@ -1859,6 +1937,8 @@
 					"\"$(SRCROOT)/eMunching\"",
 				);
 				PRODUCT_NAME = Ebony;
+				PROVISIONING_PROFILE = "D5C45C2E-906C-4CA0-B3E4-AA8547632030";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D5C45C2E-906C-4CA0-B3E4-AA8547632030";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
@@ -1919,6 +1999,7 @@
 			buildConfigurations = (
 				AF24A84713B5B5B700B1C046 /* Debug */,
 				AF24A84813B5B5B700B1C046 /* Release */,
+				3EA4F603153866D7002643FE /* Release copy */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1928,6 +2009,7 @@
 			buildConfigurations = (
 				AF24A84A13B5B5B700B1C046 /* Debug */,
 				AF24A84B13B5B5B700B1C046 /* Release */,
+				3EA4F604153866D7002643FE /* Release copy */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1937,6 +2019,7 @@
 			buildConfigurations = (
 				AF24A84D13B5B5B700B1C046 /* Debug */,
 				AF24A84E13B5B5B700B1C046 /* Release */,
+				3EA4F605153866D7002643FE /* Release copy */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

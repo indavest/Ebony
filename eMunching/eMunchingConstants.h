@@ -181,7 +181,7 @@
 
 #define FACEBOOKSHARELINK @"http://www.ebonywithaview.com/"
 
-#define FACEBOOKSHARENAME @"I just tried this dish at Ebony and it is delicious!"
+#define FACEBOOKSHARENAME @"Ebony Restaurant, Bangalore"
 
 // While we set @message, Facebook's revised policy does not allow setting this and hence the
 // "Say something about this... " textbox will remain empty

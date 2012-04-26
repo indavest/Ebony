@@ -15,8 +15,8 @@
     UIImage  *m_logoImage;
     UIButton *m_specialsButton;
    // UIButton *m_dealsButton;
-    UIButton *m_eventsButton;
-    FontLabel *m_restaurantDesc;
+   // UIButton *m_eventsButton;
+   // FontLabel *m_restaurantDesc;
     
     NSMutableArray          *m_parsedLocations;
     NSMutableData           *m_locationResults;
@@ -33,8 +33,8 @@
 @property (nonatomic,retain) IBOutlet UIImage       *logoImage;
 @property (nonatomic,retain) IBOutlet UIButton      *specialsButton;
 //@property (nonatomic,retain) IBOutlet UIButton      *dealsButton;
-@property (nonatomic,retain) IBOutlet UIButton      *eventsButton;
-@property (nonatomic ,retain) IBOutlet FontLabel  *restaurantDesc;
+//@property (nonatomic,retain) IBOutlet UIButton      *eventsButton;
+//@property (nonatomic ,retain) IBOutlet FontLabel  *restaurantDesc;
 
 
 @property (nonatomic ,retain) NSMutableArray  *parsedLocations;

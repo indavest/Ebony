@@ -61,12 +61,13 @@
     NSLog(@"%@",m_mindate);
     NSLog(@"%@",m_maxDate); 
     
-    NSString *startDate = [m_dateFormatter stringFromDate:m_mindate];
-    NSString *stopDate  = [m_dateFormatter stringFromDate:m_maxDate];
-    NSString *startTime = [m_timeFormatter stringFromDate:m_mindate];
-    NSString *stopTime = [m_timeFormatter stringFromDate:m_maxDate];
+//    NSString *startDate = [m_dateFormatter stringFromDate:m_mindate];
+//    NSString *stopDate  = [m_dateFormatter stringFromDate:m_maxDate];
+//    NSString *startTime = [m_timeFormatter stringFromDate:m_mindate];
+//    NSString *stopTime = [m_timeFormatter stringFromDate:m_maxDate];
    
-    NSString *messageString =[[[[[[[[[[[[[[@"Reservation accepted from:"stringByAppendingString:@"\n\n"]stringByAppendingString:startDate]stringByAppendingString:@"  "]stringByAppendingString:@"to"]stringByAppendingString:@"  "]stringByAppendingString:stopDate]stringByAppendingString:@"\n\n"]stringByAppendingString:@"between"]stringByAppendingString:@"\n\n"]stringByAppendingString:startTime]stringByAppendingString:@" "]stringByAppendingString:@"to"]stringByAppendingString:@" "]stringByAppendingString:stopTime];
+//    NSString *messageString =[[[[[[[[[[[[[[@"Reservation accepted from:"stringByAppendingString:@"\n\n"]stringByAppendingString:startDate]stringByAppendingString:@"  "]stringByAppendingString:@"to"]stringByAppendingString:@"  "]stringByAppendingString:stopDate]stringByAppendingString:@"\n\n"]stringByAppendingString:@"between"]stringByAppendingString:@"\n\n"]stringByAppendingString:startTime]stringByAppendingString:@" "]stringByAppendingString:@"to"]stringByAppendingString:@" "]stringByAppendingString:stopTime];
+     NSString *messageString =@"Reservations only accepted between 12:30 pm to 3 pm, 7:30 pm to 11 pm.\n\n Please await confirmation from restaurant for your requested reservation slot. ";
     
     [m_messageLabel setTextColor:TEXTCOLOR1];
     [m_messageLabel  setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:12.0f]];

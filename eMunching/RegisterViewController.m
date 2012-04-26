@@ -598,9 +598,9 @@ didReceiveResponse:(NSURLResponse *) response
     else
     {
         
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Check Phone Number!" message:@"Please enter the phone number in internationl format: \n + \'countrycode\' \'number\'"delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Check Phone Number!" message:@"Please enter the phone number in internationl format: \n  \'countrycode\' \'number\' \n Ex: 09986672461 "delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
  
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Check Phone Number" message:@"Please enter a valid phone number" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Check Phone Number" message:@"Please enter a valid phone number" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
         [alert release];
         

@@ -23,7 +23,7 @@
 - (void) displayChefSpecial;
 - (void) displayFeaturedDeals;
 - (void) displayHotDeals;
-- (void) displayEvents;
+//- (void) displayEvents;
 
 @end
 
@@ -33,8 +33,8 @@
 @synthesize logoImage      = m_logoImage;
 @synthesize specialsButton = m_specialsButton;
 //@synthesize dealsButton    = m_dealsButton;
-@synthesize eventsButton    = m_eventsButton;
-@synthesize restaurantDesc = m_restaurantDesc;
+//@synthesize eventsButton    = m_eventsButton;
+//@synthesize restaurantDesc = m_restaurantDesc;
 
 @synthesize locationResults         = m_locationResults;
 @synthesize parsedLocations         = m_parsedLocations;
@@ -87,7 +87,7 @@
     hiddenLabel.textAlignment = UITextAlignmentCenter;
     hiddenLabel.numberOfLines = 2;
     hiddenLabel.text   = @"Powered By eMunching";
-    [m_restaurantDesc setZFont:[[ApplicationManager instance].fontManager zFontWithName:BOLDFONT pointSize:15.0f]]; 
+ //   [m_restaurantDesc setZFont:[[ApplicationManager instance].fontManager zFontWithName:BOLDFONT pointSize:15.0f]]; 
      [hiddenLabel setZFont:[[ApplicationManager instance].fontManager zFontWithName:REGULARFONT pointSize:15.0f]];
     [self.scrollView addSubview:hiddenLabel];
     
@@ -119,7 +119,7 @@
     //Set colors from templates
     
     [m_scrollView setBackgroundColor:[UIColor clearColor]]; 
-    [self.view setBackgroundColor :[UIColor colorWithPatternImage:[UIImage imageNamed:@"app_background.png"]]];
+    [self.view setBackgroundColor :[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]]];
     
     [self.navigationController.navigationBar setTintColor:TINTCOLOR];   
 }
@@ -148,9 +148,9 @@
 //        case BUTTON_HOTDEALS:
 //            [self displayHotDeals]; 
 //            break;
-        case BUTTON_EVENTS:
-            [self displayEvents];
-            break;
+//       case BUTTON_EVENTS:
+//         [self displayEvents];
+//       break;
         default:
             break;
     }
@@ -202,12 +202,12 @@
     }
 }
 
-- (void) displayEvents
-{
-    EventViewController *events =[[EventViewController alloc]initWithNibName:@"EventViewController" bundle:nil];
-    [self.navigationController pushViewController:events animated:YES]; 
-
-}
+//- (void) displayEvents
+//{
+//    EventViewController *events =[[EventViewController alloc]initWithNibName:@"EventViewController" bundle:nil];
+//    [self.navigationController pushViewController:events animated:YES]; 
+//
+//}
 
 - (void)viewDidUnload
 {
@@ -373,11 +373,11 @@ didReceiveResponse:(NSURLResponse *) response
             }
             else if ([elementName isEqualToString:@"Latitude"])
             {
-                self.locationData.locationLatitiude = trimmedString;
+                self.locationData.locationLatitiude = @"12.975492";
             }
             else if ([elementName isEqualToString:@"Longitude"])
             {
-                self.locationData.locationLongitude = trimmedString;
+                self.locationData.locationLongitude = @"77.605244";
             }
             else if ([elementName isEqualToString:@"PhoneNumber"])
             {
